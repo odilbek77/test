@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    color: white;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .brand{
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+nav .brand h1 span {
+    color: crimson;
+}
+
+nav ul {
+    list-style: none;
+    width: 60%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav ul li {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li:nth-child(4){
+    width: 10%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+nav ul li:hover{
+    background-color: rgba(128, 128, 128, 0.589);
+}
+
+/* nav tugadi */
+
+/* text-section boshlandi */
+.text-section{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-section h1{
+    margin-bottom: 25px;
+    font-size: 40px
+}
+.grid-box{
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: rgb(214, 213, 213);
+}
+.card{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.card-text{
+    height: 55%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card-text a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+.card-text p{
+    color: grey;
+    font-size: 13px;
+}
+.card-text p a{
+    font-size: 13px;
+    color: blue;
+}
+.card img{
+    width: 100%;
+}
+
+ /* grid box tugadi */
+
+ /* responsive */
+ 
+ @media screen and (max-width: 1050px) {
+     .grid-box{
+         grid-template-columns: 1fr 1fr;
+     }
+ }
+ @media screen and (max-width: 768px) {
+     .grid-box{
+         grid-template-columns: 1fr;
+     }
+ }
+ @media screen and (min-width: 1440px) {
+     .grid-box{
+         grid-template-columns: repeat(4, 1fr);
+     }
+ }
